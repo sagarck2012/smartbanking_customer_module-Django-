@@ -1,0 +1,488 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Customer Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- -----------------bootsrap files---------------------------- -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!-- ----------------icon------------------- -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- -------------form validation--------------------- -->
+
+        <link rel="stylesheet" href="{% static '' %}css/formValidator_style.css">
+        <script type="text/javascript" src="{% static '' %}js/formValidator.js"></script>
+
+        <!-- --------------------multiform---------------- -->
+
+        <link rel="stylesheet" type="text/css" href="{% static '' %}css/multiform.css">
+        <link rel="stylesheet" type="text/css" href="{% static '' %}css/style.css">
+        <link rel="stylesheet" type="text/css" href="{% static '' %}css/tab.css">
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href=""></a>
+
+
+    </div>
+    <div class="collapse navbar-collapse mynav" id="myNavbar">
+      <ul class="nav navbar-nav">
+
+
+
+          <li class=""><button><i class="fa fa-check" aria-hidden="true"></i></button></li>
+          <li><button><i class="fa fa-question" aria-hidden="true"></i></button></li>
+          <li><button><i class="fa fa-pause" aria-hidden="true"></i></button></li>
+          <li><button><i class="fa fa-times" aria-hidden="true"></i></button></li>
+          <li><button><i class="fa fa-check" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i></li>
+          <li><button><i class="fa fa-chevron-left" aria-hidden="true"></i></button></li>
+          <li><button><i class="fa fa-chevron-right" aria-hidden="true"></i></button></li>
+
+          <li class="round"><button><i class="fa fa-arrow-up" aria-hidden="true"></i></button></li>
+
+          <li class="round"><button> <i class="fa fa-life-ring" aria-hidden="true"></i></button></li>
+
+
+          <li class="dropdown beside">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+          <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-key" aria-hidden="true"></i> Add</a></li>
+              <li><a href="#" ><i class='fa fa-plus'></i> Preference</a></li>
+              <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i> Organise</a></li>
+
+
+            </ul>
+        </li>
+
+
+      </ul>
+    </div>
+
+</nav>
+
+<div class="mt60">
+
+</div>
+<br>
+<h2 class="text-center">Customer Form</h2>
+<div class="container">
+<div class="row">
+
+  <div class="col-sm-6">
+
+
+      <form id="form">
+
+
+         <div class="same_line">
+             <label class="imp">Title</label>
+               <div class="input-group">
+
+                  <label class="imp">Given Name</label>
+
+               </div>
+
+          </div>
+
+        <div class="same_line">
+             <label class="imp">
+              <select id="select_1" class="">
+                      <option class="not-option">MR</option>
+                      <option val="1">MRS</option>
+                      <option val="2">Others</option>
+
+                  </select>
+             </label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control3">
+
+               </div>
+
+          </div>
+
+         <div class="same_line">
+             <label class="imp">GB Full Name <b>*</b></label>
+               <div class="input-group">
+
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                   </span>
+
+                   <input type="text" class="form-control">
+
+               </div>
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">GB Full Name-2</label>
+               <div class="input-group">
+
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                   </span>
+
+                   <input type="text" class="form-control">
+
+               </div>
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">GB Short Name <b>*</b></label>
+               <div class="input-group">
+
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                   </span>
+
+                   <input type="text" class="form-control">
+
+               </div>
+
+          </div>
+
+          <div class="radio_line">
+             <label class="imp">Gender <b>*</b></label>
+
+
+                   <b>Male</b> <input type="radio" class="" id="male" name="gender">
+                   <b>Female</b> <input type="radio" class="" id="female" name="gender">
+                   <b>Others</b> <input type="radio" class="" id="others" name="gender">
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">Account Officer</label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control">
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button">+</button>
+                   </span>
+
+
+               </div>
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">Second Officer 1</label>
+               <div class="input-group">
+
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                   </span>
+
+                   <input type="text" class="form-control2">
+
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button" style="margin-left: -32px;"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+                   </span>
+
+
+               </div>
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">Sector <b>* ++</b></label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control">
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                   </span>
+
+
+               </div>
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">Target</label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control">
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                   </span>
+
+
+               </div>
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">Nationality</label>
+               <div class="input-group">
+
+                   <input type="select" class="form-control3">
+
+               </div>
+
+          </div>
+
+          <div class="same_line">
+             <label class="imp">Customer Type</label>
+
+          </div>
+
+          <div class="same_line">
+             <label class="imp">Customer Rating. 1</label>
+               <div class="input-group">
+
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button">+</button>
+                   </span>
+
+                   <input type="text" class="form-control2">
+
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button" style="margin-left: -32px;"><i class="fa fa-plus"></i></button>
+                   </span>
+
+
+               </div>
+
+          </div>
+
+
+
+
+
+  </form>
+  </div>
+
+
+  <div class="col-sm-6">
+
+      <form id="form">
+
+
+          <div class="same_line">
+             <label class="imp">Date of Birth</label>
+               <div class="input-group">
+
+                   <input type="date" class="form-control4">
+
+               </div>
+
+          </div>
+
+
+
+         <div class="same_line">
+             <label class="imp">Family Name</label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control3">
+
+               </div>
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">Mnemonic <b>*</b></label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control3">
+
+               </div>
+
+          </div>
+
+          <div class="same_line">
+             <label class="imp">Spouse Name</label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control3">
+
+               </div>
+
+          </div>
+
+          <div class="same_line">
+             <label class="imp">Father Name</label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control3">
+
+               </div>
+
+          </div>
+
+          <div class="same_line">
+             <label class="imp">Mother Name</label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control3">
+
+               </div>
+
+          </div>
+
+          <div class="same_line">
+             <label class="imp">Unique Code Number</label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control3">
+
+               </div>
+
+          </div>
+
+          <div class="same_line">
+             <label class="imp">Company Reg Number</label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control3">
+
+               </div>
+
+          </div>
+
+
+
+           <div class="same_line">
+             <label class="imp">Marital Status</label>
+               <div class="input-group">
+
+                  <select id="select_1" class="form-control5">
+                      <option class="not-option">Select an Option</option>
+                      <option val="1">Married</option>
+                      <option val="2">Unmarried</option>
+                      <option val="2">Divorced</option>
+
+                  </select>
+
+               </div>
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">Industry</label>
+               <div class="input-group">
+
+                    <select id="select_1" class="form-control5">
+                        <option class="not-option">Select an Option</option>
+                        <option val="1">Agriculture</option>
+                        <option val="2">Fishing</option>
+                        <option val="3">Doctor</option>
+                        <option val="4">Engineer</option>
+                        <option val="5">Business</option>
+
+                    </select>
+
+
+               </div>
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">Customer Status</label>
+               <div class="input-group">
+
+                   <input type="text" class="form-control">
+                   <span class="input-group-btn">
+                   <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                   </span>
+
+
+               </div>
+
+          </div>
+
+           <div class="same_line">
+             <label class="imp">Residense</label>
+               <div class="input-group">
+
+                    <select id="select_1" class="form-control5">
+                        <option class="not-option">Select an Option</option>
+                        <option val="1">Dhaka</option>
+                        <option val="2">Bangladesh</option>
+                        <option val="3">India</option>
+                        <option val="4">China</option>
+
+                    </select>
+
+
+               </div>
+
+          </div>
+
+
+           <div class="same_line">
+             <label class="imp">Language</label>
+               <div class="input-group">
+
+                   <select id="select_1" class="form-control5">
+                        <option class="not-option">Select an Option</option>
+                        <option val="1">English</option>
+                        <option val="2">Bangla</option>
+                        <option val="3">Hindi</option>
+                        <option val="4">French</option>
+
+                    </select>
+
+
+               </div>
+
+          </div>
+
+
+
+
+      </form>
+
+  </div>
+</div>
+
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'address_form')" id="defaultOpen">Address</button>
+  <button class="tablinks" onclick="openCity(event, 'iddoc_form')">ID Doc</button>
+  <button class="tablinks" onclick="openCity(event, 'Relation')">Relation</button>
+  <button class="tablinks" onclick="openCity(event, 'Further_Details')">Further Details</button>
+  <button class="tablinks" onclick="openCity(event, 'financial_details')">Financial Details</button>
+  <button class="tablinks" onclick="openCity(event, 'residential_details')">Residential Details</button>
+  <button class="tablinks" onclick="openCity(event, 'communication')">Communication Details</button>
+  <button class="tablinks" onclick="openCity(event, 'kyc')">KYC</button>
+  <button class="tablinks" onclick="openCity(event, 'other')">Others</button>
+
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="{% static '' %}js/tab.js"></script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static '' %}css/topbar.css">
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href=""></a>
+      <a class="navbar-brand name image_user" href=""><p class="neon" ><img src="{% static '' %}image/icons8-male-user-48.png"> K. M. Nuruddin Sarwar</p></a>
+
+    </div>
+    <div class="collapse navbar-collapse mynav" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right ">
+
+
+
+        <li class="active"><a href="#intro" class="size "><i class=' fas fa-home'></i> Home</a></li>
+
+          <!-- <li><a href="#tools" class="size"><i class='fas fa-tools'></i>Tools</a></li> -->
+
+          <li><a href="{% url 'user_management:logout' %}" class="size"><i class="fas fa-sign-out-alt"></i> Sign Off</a></li>
+
+          <li class="dropdown beside">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class='fas fa-user'></i> My Profile
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="fa fa-key" aria-hidden="true"></i> Change Password</a></li>
+            <li><a href="#" ><i class='fa fa-plus'></i> Amend Preference</a></li>
+            <li><a href=""><i class="fa fa-heart" aria-hidden="true"></i> Organise favourites</a></li>
+            <li><a href="#"><i class='fa fa-power-off'></i> Deactive profile</a></li>
+            <li><a href="{% url 'user_management:logout' %}" class="size"><i class="fas fa-sign-out-alt"></i> Sign Off</a></li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+
+</nav>
+<br><br>
+<div class="inner">
+  <div><h2 class="text-center"><i class="fa fa-hand-o-down" aria-hidden="true"></i>
+ User Menu</h2></div>
+  <div><h3 class="text-center"><i class="fa fa-user-circle" aria-hidden="true"></i> Customer</h3></div>
+  <br>
+  <div class="row">
+    <div class="col-sm-3 col-xs-12 box image_head" id="">
+      <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Individual Customer</a>
+    </div>
+    <div class="col-sm-3  col-xs-12 box image_head">
+      <a href="#"><img src="{% static '' %}image/Daco_1247092.png"> Corporate Customer</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head ">
+      <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+ Create Prospect</a>
+    </div>
+    <div class="col-sm-3 box col-xs-12 image_head">
+      <a href="#"><img src="{% static '' %}image/19-1User_1-512.png"> Active Customer</a>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-sm-3 box col-xs-12 image_head">
+      <a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Amend Customer</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head ">
+      <a href="#"><img src="{% static '' %}image/50044.png"> Authorise Customer</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head3">
+      <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Create/Amend Routing Instructions</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head3">
+      <a href="#"><i class="fa fa-trash" aria-hidden="true"></i>  Authorise/Delete Routing Instructions</a>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-sm-3 col-xs-12 box image_head3">
+      <a href="#"><i class="fa fa-address-book" aria-hidden="true"></i> Additional Address of Customer</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head3" id="">
+      <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> Create/Amend Routing Instruction</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head3">
+      <a href="#"><i class="fa fa-pen" aria-hidden="true"></i> Amend Customer Charge</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head3" id="">
+      <a href="#"><i class="fa fa-check-square" aria-hidden="true"></i> Authorise/Delete Customer Charge</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head3" id="">
+      <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Set/Remove Posting Restrict</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head3">
+      <a href="#"><i class="fa fa-file" aria-hidden="true"></i>  Authorise/Delete  Posting Restrict</a>
+    </div>
+  </div>
+<div class="image_head"><h3 class="text-center"><i class="fa fa-question-circle" aria-hidden="true"></i> Enquiries</h3></div><br>
+   <div class="row">
+  <div class="col-sm-3 col-xs-12 box image_head">
+      <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> Customer Details</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head">
+      <a href="{% url 'customer:customer_add' %}" target="_blank"><i class="fa fa-user-plus" aria-hidden="true"></i>Customer Add</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head2 " id="">
+      <a href="#"><i class="fa fa-search"></i> Prospect Search</a>
+    </div>
+    <div class="col-sm-3 col-xs-12 box image_head">
+      <a href="#"><i class="fa fa-list-ol" aria-hidden="true"></i> Customer List</a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
